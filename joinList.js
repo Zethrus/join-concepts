@@ -12,6 +12,18 @@
 // Write our function (we must define it too!) below
 // ...
 
+function joinList(arr) {
+  let result = "";
+  for (let i = 0; i < arr.length; i++) {
+    result += arr[i];
+    if (i < arr.length - 1) {
+      result += ", ";
+    }
+  }
+  return result;
+}
+
+
 // Test / Driver Code below...
 const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
 const concepts = joinList(conceptList);
