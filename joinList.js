@@ -12,6 +12,21 @@
 // Write our function (we must define it too!) below
 // ...
 
+
+const joinList = function(list) {
+
+  let formattedList = "";
+  for (let i = 0; i < list.length; i++) {
+    formattedList += list[i];
+
+    if (i < list.length - 1) {
+      formattedList += ", ";
+    }
+  }
+  return formattedList;
+}
+
+
 // Test / Driver Code below...
 const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
 const concepts = joinList(conceptList);
